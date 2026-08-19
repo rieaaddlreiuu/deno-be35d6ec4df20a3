@@ -5,7 +5,7 @@ Deno.serve((req) => {
   console.log(pathname);
 
   if (req.method === "GET" && pathname === "/welcome-message") {
-    return new Response("jigインターンへようこそ！");
+    return new Response("これはなんですか？");
   }
 
   return serveDir(req, {
